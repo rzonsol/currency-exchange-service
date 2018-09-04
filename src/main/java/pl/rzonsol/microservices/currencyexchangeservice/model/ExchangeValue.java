@@ -21,6 +21,7 @@ public class ExchangeValue {
     private String from;
     @Column(name = "currency_to")
     private String to;
+    @Column(columnDefinition="DECIMAL(19,4)")
     private BigDecimal conversionMultiple;
     private int port;
 }
