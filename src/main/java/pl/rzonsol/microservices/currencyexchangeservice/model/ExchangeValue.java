@@ -15,4 +15,5 @@ public class ExchangeValue {
     private String from;
     private String to;
     private BigDecimal conversionMultiple;
+    private int port;
 }
