@@ -9,8 +9,6 @@ import pl.rzonsol.microservices.currencyexchangeservice.exception.ConversionNotF
 import pl.rzonsol.microservices.currencyexchangeservice.model.ExchangeValue;
 import pl.rzonsol.microservices.currencyexchangeservice.repository.ExchangeValueRepository;
 
-import java.math.BigDecimal;
-
 @RestController
 public class CurrencyExchangeController {
 
