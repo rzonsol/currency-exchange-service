@@ -23,6 +23,7 @@ public class CurrencyExchangeController {
 
         ExchangeValue exchangeValue = exchangeValueRepository.findByFromAndTo(from,to).orElseThrow(()-> new ConversionNotFoundException("Conversion from: "+ from + " to: "+ to + " not found in DB" ));
 
+        exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
         return exchangeValue;
     }
 }
